@@ -1,22 +1,18 @@
 README
 
-    Requisites : java and maven installed and an internet connection to download dependencies
+    Requisites : java 11 and maven installed
 
 	Build
 
-		download the task_lottoland project in some path
-		cd path/task_lottoland
+		Clone the task_lottoland project in some path
+            git clone https://github.com/pabloiri/task_lottoland.git
+
+		cd task_lottoland
 		mvn install
 
 	Run
 
 		java -jar target/task-1.0-SNAPSHOT.jar
-
-		Or if want to do a remote debug using port 8001
-			java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8001 -jar target/task-1.0-SNAPSHOT.jar
-
-		Or using the spring boot maven plugin from the IDE 
-			mvn spring-boot:run
 
 	Use
 
