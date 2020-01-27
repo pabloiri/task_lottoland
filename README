@@ -1,0 +1,39 @@
+README
+
+    Requisites : java and maven installed and an internet connection to download dependencies
+
+	Build
+
+		download the task_lottoland project in some path
+		cd path/task_lottoland
+		mvn install
+
+	Run
+
+		java -jar target/task-1.0-SNAPSHOT.jar
+
+		Or if want to do a remote debug using port 8001
+			java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8001 -jar target/task-1.0-SNAPSHOT.jar
+
+		Or using the spring boot maven plugin from the IDE 
+			mvn spring-boot:run
+
+	Use
+
+        http://host-name:8080/page.html
+
+        Locally could use
+            http://localhost:8080/page.html
+
+    Rest API
+
+		There are 2 endpoints.
+
+		- playRound: POST  /play
+            play a round and return the result
+
+		- totalsAccumulator: GET /totals
+            return the totals for all the games played
+
+
+
